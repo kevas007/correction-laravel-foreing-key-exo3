@@ -46,7 +46,7 @@ class VoitureController extends Controller
         $store->couleur_id = $request->couleur_id;
         $store->save();
 
-        return redirect()->back();
+        return redirect()->back()->with('success', 'Voiture add');
     }
 
     /**

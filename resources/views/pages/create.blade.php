@@ -1,5 +1,5 @@
 @extends('layouts.index')
-
+@extends('flash')
 @section("content")
 <form action="/store" method="post">
     @csrf
